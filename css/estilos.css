@@ -44,7 +44,7 @@ img{
 /*Definir el ancho del contenido*/
 header{
     background: #9AEC30;
-    margin-bottom: 0.3em;
+    margin-bottom: 0;
 }
 header, footer{
     max-width: 100%;
@@ -61,6 +61,14 @@ nav{
 nav ul{
     list-style: none;
     padding: 2em 0;
+}
+h1#corp{
+    text-align: left;
+    width: 35%;
+}
+ul#nav{
+    text-align: right;
+    width: 60%;
 }
 nav li{
     display: inline-block;
@@ -88,6 +96,13 @@ nav ul a:hover{
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
+footer{
+    color: 
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
 .container article{
     background: #FFF;
     box-shadow: 0 0 5px #888;
@@ -99,49 +114,13 @@ nav ul a:hover{
     text-align:justify;
     vertical-align: top;
 }
-footer{
-    color: 
-}
-.container{
-    max-width: 90%;
+.flex-content{
+    background: #9AEC30;
     margin: 0 auto;
+    max-width: 40%;
 }
-/* Media queries */
-@media(min-width:1081px){
-    h1#corp{
-        text-align: left;
-        width: 35%;
-    }
-    ul#nav{
-        text-align: right;
-        width: 60%;
-    }
-}
-@media(max-width: 1080px){
-    
-}
-@media(min-width: 800){
-    section.container article{
-        max-width: 90%;
-    }
-}
-@media(max-width: 799px){
-    nav ul{
-        font-size: 1.3em;
-        padding: 0 .6em;
-    }
-    section.container article{
-        display: block;
-        max-width: 95%;
-    }
-}
-@media(max-width: 321px){
-    nav, nav li{
-        max-width: 100%;
-    }
-    nav ul a{
-        display: block;
-        max-width: 100%;
-        border: 1px solid rgb(104, 159, 33);
-    }
+.slide{
+    background: #9AEC30;
+    max-width: 100%;
+    padding-bottom: 0.1em;
 }

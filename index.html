@@ -5,6 +5,7 @@
         <title>Corp</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/flexslider.css">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -25,10 +26,22 @@
                     </ul>
                 </div>
             </nav>
-            <div class="slide">
-                Aca va un slider con los servicios
+            <div class="container">
+                <form action=""><input type="text" name="search" id="search"></form>
             </div>
         </header>
+        <div class="slide">
+            <div class="flex-content">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="img/1.jpg" alt=""></li>
+                        <li><img src="img/2.jpg" alt=""></li>
+                        <li><img src="img/3.jpg" alt=""></li>
+                        <li><img src="img/4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <section id="principal">
             <section class="container">
                 <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aliquam odit libero distinctio labore at amet sit corrupti praesentium vero repellendus illum unde repellat ex facilis. Dicta quisquam ex sit.</article>
@@ -41,6 +54,14 @@
         </footer>
     <!--script-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/funciones.js"></script>
+    <script>
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide"
+          });
+        });
+    </script>
     </body>
 </html>
