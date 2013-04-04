@@ -117,10 +117,35 @@ footer{
 .flex-content{
     background: #9AEC30;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 70%;
 }
 .slide{
     background: #9AEC30;
     max-width: 100%;
-    padding-bottom: 0.1em;
+}
+/*Estilos del slide*/
+ul#slides{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 60%;
+    height: 16em;
+}
+ul#slides li {
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+}
+ul#slides li img {
+    border: solid 10px #fcfcfc;
+    border-radius: 0.1em;
+    box-shadow: 0 0 6px rgba(0,0,0,0.7);
+    width: 80%;
+}
+ul#slides li.roundabout-in-focus {
+    cursor: default;
+}
+ul#slides li span {
+    display: block;
+    padding-top: 1sem;
 }

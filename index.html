@@ -5,7 +5,6 @@
         <title>Corp</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/flexslider.css">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -32,14 +31,12 @@
         </header>
         <div class="slide">
             <div class="flex-content">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li><img src="img/1.jpg" alt=""></li>
-                        <li><img src="img/2.jpg" alt=""></li>
-                        <li><img src="img/3.jpg" alt=""></li>
-                        <li><img src="img/4.jpg" alt=""></li>
-                    </ul>
-                </div>
+                <ul id="slides">
+                    <li><img src="img/1.jpg" alt=""></li>
+                    <li><img src="img/2.jpg" alt=""></li>
+                    <li><img src="img/3.jpg" alt=""></li>
+                    <li><img src="img/4.jpg" alt=""></li>
+                </ul>
             </div>
         </div>
         <section id="principal">
@@ -53,14 +50,16 @@
             <div class="container">Desarrollado por &copy;Alexis A. Fuentes</div>
         </footer>
     <!--script-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.roundabout.min.js"></script>
     <script src="js/funciones.js"></script>
     <script>
-        $(window).load(function() {
-          $('.flexslider').flexslider({
-            animation: "slide"
-          });
+        $(document).ready(function() {
+            $("#slides").roundabout({
+                autoplay: true,
+                autoplayDuration: 3000,
+                autoplayPauseOnHover: true
+            });
         });
     </script>
     </body>
